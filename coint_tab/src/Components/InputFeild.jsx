@@ -48,21 +48,22 @@ const InputFeild = () => {
 
 <input type="text"  value ={form.weight} onChange={handleChange} name="weight" id="" placeholder="product Weight" required className='input' />
  <br /><br />
- <input type="number"  value ={form.pincode} onChange={handleChange} name="pincode" id="" placeholder="Enter Pincode" required className='input' />
+ <input type="number"  value ={form.pincode} onChange={handleChange} name="pincode" id="" placeholder="Enter Pincode  507101" required className='input' />
  <br /><br />
-  <select name="rate_type"   value ={form.rate_type} onChange={handleChange}   >
+  <select name="rate_type"    className='input' value ={form.rate_type} onChange={handleChange}   >
     
     
-  <option> Select </option>
-    <option value="Forward"  > Forward </option>
+  <option className='input'> Select </option>
+    <option value="Forward"   > Forward </option>
     <option value="Forward & RTO"  > Forward & RTO </option>
     
   </select>
- <Button variant="contained" onClick={handleSubmit} >Contained</Button>
+  <br /><br />
+ <Button variant="contained" onClick={handleSubmit} > Price </Button>
 
 </form>
-
- {!!totalPrice && `Your Total Prize is ${totalPrice}`}
+<br /><br /><br />
+ {!!totalPrice && `Your Total Prize is  $ ${totalPrice.toFixed(2)}`}
      </div>
     </div>
   )

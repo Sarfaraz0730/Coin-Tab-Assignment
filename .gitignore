@@ -1,2 +1,4 @@
 Back_end/node_modules
 coint_tab/node_modules
+# Local Netlify folder
+.netlify
