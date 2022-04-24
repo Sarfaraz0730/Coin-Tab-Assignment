@@ -1,0 +1,13 @@
+.form{
+    height: 400px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   
+}
+.input{
+    height: 20px;
+    width: 40%;
+}
